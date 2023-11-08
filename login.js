@@ -7,8 +7,8 @@ let revealButton = document.querySelector('.reveal')
 function checkPassword() {
 
     if (passwordField.value === "wholesale763") {
-        window.location.href='https://shop.silkcitycoffee.com/collections/coffee'
-      
+        window.location.href = 'https://shop.silkcitycoffee.com/collections/coffee'
+
     } else {
 
         document.querySelector('.error').innerHTML = 'Try again!';
@@ -16,22 +16,21 @@ function checkPassword() {
         setTimeout(() => {
             error.innerHTML = ''
             error.classList.remove('error-fade')
-          }, 2000);
-        
+        }, 2000);
+
     }
 }
 
-revealButton.addEventListener('click', function() {
+revealButton.addEventListener('click', function () {
 
     if (passwordField.type === "password") {
-      passwordField.type = "text";
-      revealButton.classList.remove('fa-eye-slash')
-      revealButton.classList.add('fa-eye')
+        passwordField.type = "text";
+        revealButton.classList.remove('fa-eye-slash')
+        revealButton.classList.add('fa-eye')
     } else {
-      passwordField.type = "password";
-      revealButton.classList.add('fa-eye-slash')
-      revealButton.classList.remove('fa-eye') 
+        passwordField.type = "password";
+        revealButton.classList.add('fa-eye-slash')
+        revealButton.classList.remove('fa-eye')
     }
- })
-         
- 
+})
+

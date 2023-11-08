@@ -31,20 +31,20 @@ h3 {
 }
 
 form {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 15px;
-gap: 15px;
-background-color: rgb(245, 245, 245);
-border-radius: 50px;
-box-shadow: 0 0 30px rgb(0, 0, 0), inset 0 0 1px black;
-border: none;
-outline: none;
-width: 400px;
-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    gap: 15px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgb(0, 0, 0), inset 0 0 1px black;
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 300px;
 }
 
 .reveal {
@@ -80,40 +80,41 @@ height: 300px;
     border: none;
     padding: 15px;
     font-size: 18px;
-    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     border-radius: 25px;
 }
+
 #passwordField {
-background-color: transparent;
-border: none;
-outline: none;
-text-align: center;
-color: whitesmoke;
-width: 250px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: whitesmoke;
+    width: 250px;
 }
 
 .go-button {
-background-color: black;
-border-radius: 50px;
-font-family: 'Montserrat', sans-serif;
-cursor: pointer;
-font-size: 16px;
-padding: 5px;
-color: rgb(216, 216, 216);
+    background-color: black;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    color: rgb(216, 216, 216);
 }
 
 .error {
     position: absolute;
-width: 100%;
-text-transform: uppercase;
-padding-right: 10px;
-padding-bottom: 10px;
-margin: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 .error-fade {
     opacity: 1;
-    animation: hide 2.5s ;
+    animation: hide 2.5s;
 }
 
 @keyframes hide {
@@ -125,10 +126,32 @@ margin: 0;
 @media (max-width: 450px) {
 
     body {
-     
+        background-position: center;
+        background-size: contain;
     }
+
     form {
-    width: 90vw;
-    height: auto;
+        width: 90vw;
+        height: auto;
     }
+}
+
+@media (max-width: 300px) {
+
+    h3 {
+        font-size: 20px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #passwordField {
+        width: 220px;
+        font-size: 16px;
+    }
+
+    form {
+        width: 95%;
+    }
+
 }

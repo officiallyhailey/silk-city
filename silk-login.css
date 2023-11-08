@@ -1,24 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 html {
     overflow: hidden;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('8B47F902-A413-4290-A22F-AB8E7483C7AF.png');
+    background-size: 50%;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-color: black; */
+}
+
+h3 {
+    font-size: 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin: 10px;
 }
 
 form {
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 15px;
+gap: 15px;
+background-color: rgb(245, 245, 245);
+border-radius: 50px;
+box-shadow: 0 0 30px rgb(0, 0, 0), inset 0 0 1px black;
+border: none;
+outline: none;
+width: 400px;
+height: 300px;
 }
 
-#password {
-
+.reveal {
+    background-color: black;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0;
 }
 
-#submit {
+.reveal:hover {
+    transform: scale(1.2);
+}
 
+.reveal:active {
+    transform: none;
+}
+
+.go-button:hover {
+    transform: scale(1.1);
+}
+
+.go-button:active {
+    transform: none;
+}
+
+.password {
+    margin: 0;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border-radius: 25px;
+}
+#passwordField {
+background-color: transparent;
+border: none;
+outline: none;
+text-align: center;
+color: whitesmoke;
+width: 250px;
+}
+
+.go-button {
+background-color: black;
+border-radius: 50px;
+font-family: 'Montserrat', sans-serif;
+cursor: pointer;
+font-size: 16px;
+padding: 5px;
+color: rgb(216, 216, 216);
+}
+
+.error {
+    position: absolute;
+width: 100%;
+text-transform: uppercase;
+padding-right: 10px;
+padding-bottom: 10px;
+margin: 0;
+}
+
+.error-fade {
+    opacity: 1;
+    animation: hide 2.5s ;
+}
+
+@keyframes hide {
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 450px) {
+
+    body {
+     
+    }
+    form {
+    width: 90vw;
+    height: auto;
+    }
 }

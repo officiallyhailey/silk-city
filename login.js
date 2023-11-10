@@ -7,7 +7,7 @@ let revealButton = document.querySelector('.reveal')
 function checkPassword() {
 
     if (passwordField.value === "wholesale763") {
-        window.location.href = 'https://shop.silkcitycoffee.com/pages/wholesale'
+        window.location.href = 'https://shop.silkcitycoffee.com/pages/1234'
 
     } else {
 
